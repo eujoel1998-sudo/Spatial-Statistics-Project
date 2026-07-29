@@ -29,7 +29,19 @@ notebooks/
       CURRENTLY FAILS with HTTP 400 — the query parameters need fixing
       (check field names/output format against the FeatureServer's
       metadata endpoint) or fall back to the static RVR_Kreise.shp.
+
+webmap/
+  build_webmap.py            Generates an interactive LISA cluster map
+                              (folium): LST 2020 choropleth + HH/LL/HL/LH
+                              cluster layer, overlaid on the real RVR
+                              boundary. Re-run with `python build_webmap.py`.
+  ruhr_lisa_cluster_map.html Generated output — open directly in a browser.
 ```
+
+NOTE: `RVR_Kreise.shp`'s `.prj` file mislabels its CRS as WGS84 degrees;
+the coordinates are actually Web Mercator (EPSG:3857) meters — the webmap
+script overrides this (`RVR_ACTUAL_CRS`) before reprojecting. Bear this in
+mind if you load this shapefile elsewhere.
 
 ## Next steps to make this a real diagnostic
 

@@ -35,7 +35,22 @@ notebooks/
       spatially-weighted Gini on US county per-capita income.
 
 outputs/figures/   PNG outputs already produced by the notebooks above.
+
+webmap/
+  brexit_map.py       Interactive % Leave choropleth + LISA cluster layer (folium).
+  brexit_map.html     Generated output.
+  tokyo_map.py        Interactive density heatmap + clustered points (folium).
+  tokyo_map.html      Generated output.
+  sri_lanka_map.py     Interactive population-density choropleth with a
+                        toggle between classification schemes (Quantiles,
+                        Equal Interval, Fisher-Jenks, Head/Tail Breaks).
+  sri_lanka_map.html   Generated output.
+  (no US counties web map — inequality/Gini analysis in notebook 04 doesn't
+   have a natural single-map representation; static plots in that notebook
+   remain the primary output for that case study)
 ```
+
+Re-run any `*_map.py` script directly to regenerate its `.html` after data changes.
 
 ## Known cleanup needed
 

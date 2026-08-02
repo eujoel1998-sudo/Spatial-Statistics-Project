@@ -358,8 +358,23 @@
     </article>
   </section>
 
+  <section id="gwr-overall">
+    <div class="section-head">
+      <div class="eyebrow">04 — GWR_Overall_Analysis</div>
+      <h2>GWR Overall — Per-Cell Coefficient Evolution</h2>
+    </div>
+    <p class="section-lede">A companion question to the MGWR/SDM study above: rather than asking whether relationships vary across space, this fits single-scale adaptive GWR independently for 2015/2025/2035 and differences the results — do local coefficients themselves drift as the city develops?</p>
+
+    <article class="project">
+      <div class="project-tag">Adaptive bandwidth by metric</div>
+      <h3>Built-up and Vegetation PD are local (145–253 neighbours); Vegetation Cohesion is nearly global (608–860)</h3>
+      <p>The bandwidth GWR selects for each metric is itself a diagnostic: Vegetation Cohesion needs 3–5× more neighbours to fit well, meaning its relationships are far smoother across space — consistent with its high global R² in the MGWR study. Differencing Built-up PD's coefficients year over year shows a covariate's local effect not just weakening or strengthening, but flipping sign in the same location a decade later.</p>
+      <a class="maplink" href="GWR_Overall_Analysis/index.html">Open full case study</a>
+    </article>
+  </section>
+
   <section id="skills">
-    <div class="section-head"><div class="eyebrow">04</div><h2>Methods &amp; Tools</h2></div>
+    <div class="section-head"><div class="eyebrow">05</div><h2>Methods &amp; Tools</h2></div>
     <div class="skills-grid">
       <div class="skill-cell"><span class="k">Core Libraries</span><span class="v">GeoPandas, libpysal, esda, mapclassify, folium</span></div>
       <div class="skill-cell"><span class="k">Autocorrelation</span><span class="v">KNN &amp; Queen contiguity weights, Global/Local Moran's I, LISA clusters</span></div>

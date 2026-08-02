@@ -2,7 +2,7 @@
 
 **Live site:** https://eujoel1998-sudo.github.io/Spatial-Statistics-Project/
 
-Three projects built from spatial-statistics notebooks, split by purpose.
+Four projects built from spatial-statistics notebooks, split by purpose.
 
 ## Subprojects
 
@@ -22,6 +22,12 @@ Three projects built from spatial-statistics notebooks, split by purpose.
   Vegetation PD × 2015/2025/2035), testing whether landscape-metric drivers
   are spatially stationary or structurally different by city sector.
   Includes an interactive regime-zone webmap.
+
+- **[GWR_Overall_Analysis](GWR_Overall_Analysis/)** — single-scale adaptive
+  GWR fit independently per year (2015/2025/2035) on the same grid, then
+  differenced over time to map how local coefficients themselves shift as
+  the city develops. Companion to MGWR_SDM_Regime_Analysis's spatial
+  question, asking a temporal one instead.
 
 Each subfolder has its own README with data provenance, structure, and
 known follow-up items.

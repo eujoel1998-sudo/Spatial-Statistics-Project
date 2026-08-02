@@ -331,8 +331,35 @@
     </article>
   </section>
 
+  <section id="mgwr-sdm">
+    <div class="section-head">
+      <div class="eyebrow">03 — MGWR_SDM_Regime_Analysis</div>
+      <h2>MGWR &amp; Spatial Durbin Regime Analysis</h2>
+    </div>
+    <p class="section-lede">Does one model fit the whole city? Multiscale GWR and a five-city-sector Spatial Durbin Model applied to the same 1,493-cell Dortmund landscape-metrics grid (Built-up Patch Density, Vegetation Cohesion, Vegetation Patch Density × 2015/2025/2035) — testing whether landscape-metric drivers are spatially stationary or structurally different by sector.</p>
+
+    <article class="project">
+      <div class="project-tag">MGWR: local vs. global relationships</div>
+      <h3>MGWR closes up to 60% of the unexplained variance a citywide model leaves behind</h3>
+      <p>Built-up and Vegetation Patch Density are barely explained by a single global relationship (R² ≈ 0.52–0.59) — letting each covariate's coefficient vary spatially via its own optimal bandwidth lifts fit to R² 0.81–0.89. Vegetation Cohesion, already well explained globally (R² 0.88–0.92), gains comparatively little from local variation.</p>
+      <div class="stat-row">
+        <span class="chip"><span class="k">Grid cells</span><span class="v">1,493</span></span>
+        <span class="chip"><span class="k">Models fit</span><span class="v">9 (3 metrics × 3 years)</span></span>
+        <span class="chip warn"><span class="k">Largest MGWR gain</span><span class="v">+0.34 R² (Built-up PD, 2015)</span></span>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-tag">SDM: five city-sector regimes</div>
+      <h3>The same variable can push a metric up in one sector and down in another</h3>
+      <p>Grouping Dortmund's 12 Stadtbezirke into five sectors (Core/North/East/South/West City) and fitting a separate Spatial Durbin Model per sector, a Chow test confirms the sectors are structurally different (p &lt; 0.001 for all nine metric/year combinations) — not just noisier versions of one citywide model. A landscape-shape-index change that suppresses built-up density directly can spill over to <i>increase</i> it in neighbouring cells, and the size — sometimes the sign — of that effect flips between sectors.</p>
+      <a class="maplink" href="MGWR_SDM_Regime_Analysis/webmap/regime_zones_map.html">Open interactive regime-zone map</a>
+      <a class="maplink" href="MGWR_SDM_Regime_Analysis/index.html">Open full case study</a>
+    </article>
+  </section>
+
   <section id="skills">
-    <div class="section-head"><div class="eyebrow">03</div><h2>Methods &amp; Tools</h2></div>
+    <div class="section-head"><div class="eyebrow">04</div><h2>Methods &amp; Tools</h2></div>
     <div class="skills-grid">
       <div class="skill-cell"><span class="k">Core Libraries</span><span class="v">GeoPandas, libpysal, esda, mapclassify, folium</span></div>
       <div class="skill-cell"><span class="k">Autocorrelation</span><span class="v">KNN &amp; Queen contiguity weights, Global/Local Moran's I, LISA clusters</span></div>

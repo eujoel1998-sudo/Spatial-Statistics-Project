@@ -3,7 +3,7 @@
 Single-scale adaptive Geographically Weighted Regression (GWR), fit independently for 2015, 2025, and 2035 on the same 1,493-cell Dortmund landscape-metrics grid used in `../MGWR_SDM_Regime_Analysis/`. Where that companion project asks whether relationships are spatially stationary, this one holds the spatial question fixed (single adaptive bandwidth per year) and asks a temporal one: does a covariate's local coefficient drift, in the same grid cell, as the city develops from 2015 to 2035?
 
 **Live page:** see this folder's `index.html`, or the main repo `index.html` for a shorter summary + link.
-**Interactive map:** `webmap/gwr_coefficient_explorer.html` — all 1,493 cells, switchable between local R² and per-cell coefficients for all three metrics **and all three years (2015/2025/2035)**, refit directly from the source shapefiles (not a static export of the notebook figures). Click between years to compare the same cross-section over time.
+**Interactive map:** `webmap/gwr_coefficient_explorer.html` — a full detail page in the style of the author's Dortmund Climate-Adaptation Landscape Monitor (a separate webmap built for the thesis's IV chapter): header + segmented Metric/Layer/Year controls, a classed legend with quantile breaks, an info panel showing all three metrics' local R² on hover, dashed-outline flagging for statistically unstable coefficients (>3σ from the layer mean), and a collapsible "Data & methodology" panel with the full bandwidth table and caveats. All 1,493 cells × 3 metrics × 3 years × 3 layers (27 total), refit live from the source shapefiles — not a static export of the notebook figures.
 
 ## Structure
 

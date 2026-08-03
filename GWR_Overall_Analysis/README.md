@@ -3,7 +3,7 @@
 Single-scale adaptive Geographically Weighted Regression (GWR), fit independently for 2015, 2025, and 2035 on the same 1,493-cell Dortmund landscape-metrics grid used in `../MGWR_SDM_Regime_Analysis/`. Where that companion project asks whether relationships are spatially stationary, this one holds the spatial question fixed (single adaptive bandwidth per year) and asks a temporal one: does a covariate's local coefficient drift, in the same grid cell, as the city develops from 2015 to 2035?
 
 **Live page:** see this folder's `index.html`, or the main repo `index.html` for a shorter summary + link.
-**Interactive map:** `webmap/gwr_coefficient_explorer.html` — all 1,493 cells, switchable between local R² and per-cell coefficients for all three metrics (2015), refit directly from the source shapefiles (not a static export of the notebook figures).
+**Interactive map:** `webmap/gwr_coefficient_explorer.html` — all 1,493 cells, switchable between local R² and per-cell coefficients for all three metrics **and all three years (2015/2025/2035)**, refit directly from the source shapefiles (not a static export of the notebook figures). Click between years to compare the same cross-section over time.
 
 ## Structure
 
@@ -11,10 +11,19 @@ Single-scale adaptive Geographically Weighted Regression (GWR), fit independentl
 index.html   Narrative page: per-metric adaptive-bandwidth comparison, coefficient
              snapshot maps (2015/2025/2035), and year-over-year coefficient deltas
 webmap/
-  gwr_coefficient_explorer.html   Interactive Leaflet map of live-refit 2015 GWR
-                                  results for all three metrics (local R2 + two
-                                  highlighted coefficients each), dropdown-selectable
+  gwr_coefficient_explorer.html   Interactive Leaflet map of live-refit GWR results
+                                  for all three metrics x all three years (local R2 +
+                                  two highlighted coefficients each = 27 layers),
+                                  selectable by metric/layer dropdown + year buttons
 ```
+
+## Model fit by metric & year (R² / Adj. R², live-refit)
+
+| Metric | 2015 | 2025 | 2035 |
+|---|---|---|---|
+| Built-up PD | 0.837 / 0.787 | 0.825 / 0.771 | 0.875 / 0.816 |
+| Vegetation Cohesion | 0.900 / 0.889 | 0.905 / 0.897 | 0.931 / 0.926 |
+| Vegetation PD | 0.767 / 0.704 | 0.841 / 0.782 | 0.847 / 0.796 |
 
 ## Source data & models
 

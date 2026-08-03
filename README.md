@@ -2,7 +2,7 @@
 
 **Live site:** https://eujoel1998-sudo.github.io/Spatial-Statistics-Project/
 
-Four projects built from spatial-statistics notebooks, split by purpose.
+Five projects built from spatial-statistics notebooks, split by purpose.
 
 ## Subprojects
 
@@ -28,6 +28,12 @@ Four projects built from spatial-statistics notebooks, split by purpose.
   differenced over time to map how local coefficients themselves shift as
   the city develops. Companion to MGWR_SDM_Regime_Analysis's spatial
   question, asking a temporal one instead.
+
+- **[Regime_Landscape_Metrics](Regime_Landscape_Metrics/)** — raw FRAGSTATS
+  fragmentation metrics (not a modelled outcome) computed directly from
+  land-use rasters, 2000–2035, by city-sector regime, plus a formal
+  structural-plausibility check on the CA-CNN-LSTM model's own forecasts.
+  Active thesis chapter material (Chapter 5).
 
 Each subfolder has its own README with data provenance, structure, and
 known follow-up items.

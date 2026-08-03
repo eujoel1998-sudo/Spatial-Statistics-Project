@@ -2,7 +2,7 @@
 
 **Live site:** https://eujoel1998-sudo.github.io/Spatial-Statistics-Project/
 
-Five projects built from spatial-statistics notebooks, split by purpose.
+Six projects built from spatial-statistics notebooks, split by purpose.
 
 ## Subprojects
 
@@ -34,6 +34,11 @@ Five projects built from spatial-statistics notebooks, split by purpose.
   land-use rasters, 2000–2035, by city-sector regime, plus a formal
   structural-plausibility check on the CA-CNN-LSTM model's own forecasts.
   Active thesis chapter material (Chapter 5).
+
+- **[Grid_Landscape_Metrics](Grid_Landscape_Metrics/)** — the same
+  fragmentation metrics as Regime_Landscape_Metrics, at native 1,493-cell
+  grid resolution instead of 5-regime averages, so within-district
+  variation a regime mean hides is directly inspectable.
 
 Each subfolder has its own README with data provenance, structure, and
 known follow-up items.
